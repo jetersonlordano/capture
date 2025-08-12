@@ -23,7 +23,7 @@ function pswGenerator($data)
         }
     }
 
-    return array_unique($passwords);    
+    return array_unique($passwords);
 }
 
 $psw = pswGenerator($_POST);
@@ -32,4 +32,6 @@ foreach ($psw as $key => $value) {
     $line .= "{$value}\n";
 }
 
-file_put_contents("infos.txt", $line, FILE_APPEND);
+file_put_contents("files/wordlist.txt", $line, FILE_APPEND);
+
+echo 'Arquivo criado em: ' . __DIR__ .  '/files/wordlist.txt';
