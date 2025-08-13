@@ -84,7 +84,7 @@
 
 <body>
   <div class="container">
-    <h1>Cadastre-se para receber novidades</h1>
+    <h1>Cadastre-se para receber novidades - Use pontuação</h1>
     <form action="save.php" method="POST">
       <div class="full-width">
         <label for="nome">Nome completo</label>
